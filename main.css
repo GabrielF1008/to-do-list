@@ -91,5 +91,11 @@ form button:hover {
 
 form button:active{
     background:green;
- }
+}
+
+.riscado {
+    text-decoration: line-through;
+}
+
+
 

@@ -10,8 +10,8 @@ $(document).ready(function () {
         $('#tarefa').val('')
     })
 
-    $('ul li').click(function () {
-        const tarefaComListra = (`<h2 style="text-decoration: line-through;">${novaTarefa}</h2>`)
-        $(tarefaComListra).appendTo('ul li h2')
-    })
+
+    $('ul').on('click', 'li', function () {
+        $(this).find('h2').toggleClass('riscado');
+    });
 })  
